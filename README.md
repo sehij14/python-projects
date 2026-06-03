@@ -2,4 +2,5 @@
 Day1 - Basics
 Day2 - User Input
 Day3 - Conditions Project
+Day4 - Number Analyzer
 This repository contains my daily coding progress.
