@@ -11,7 +11,7 @@ def divide(a, b):
     return a / b
 
 while True:
-    print("\n===SAFE CALCULATOR ===")
+    print("\n====SAFE CALCULATOR====")
     print("1. Add")
     print("2. Subtract")
     print("3. Multiply")
