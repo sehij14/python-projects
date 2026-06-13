@@ -15,7 +15,7 @@ def view_students():
         for i in range(len(students)):
             print(i + 1, ".", students[i])
 while True:
-    print("\n===STUDENT RECORD MANAGER===")
+    print("\n====STUDENT RECORD MANAGER====")
     print("1. Add Student")
     print("2. View Students")    
     print("3. Exit")     
