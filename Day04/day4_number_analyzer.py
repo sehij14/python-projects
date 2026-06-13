@@ -1,7 +1,7 @@
 # Day4 Project
 #Number Analyzer System
 
-print("-----NUMBER ANALYZER----")
+print("------NUMBER ANALYZER-----")
 
 n = int(input("How many numbers do you want to enter? "))
 
