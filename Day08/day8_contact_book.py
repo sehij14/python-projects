@@ -30,7 +30,7 @@ def view_contacts():
             print("No Contacts Found.")
 
         else:
-            print("\n----- CONTACT LIST -----")
+            print("\n------ CONTACT LIST ------")
             print(content)
 
     except FileNotFoundError:
