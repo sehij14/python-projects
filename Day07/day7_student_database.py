@@ -28,7 +28,7 @@ for i, student in enumerate(students,start=1):
  print("Marks :", student["marks"])
 
 while True:
-   print("\n===STUDENT DATABASE SYSTEM===")
+   print("\n====STUDENT DATABASE SYSTEM====")
    print("1. Add Student")
    print("2. View Students")
    print("3. Exit")
