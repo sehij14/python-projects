@@ -36,7 +36,15 @@ class Student:
             return "Pass"
 
         return "Fail"
-
+    def is_topper(self):
+        if self.marks >=95:
+            return "Topper"
+        elif self.marks >= 90:
+            return "Good Student"
+        elif self.marks >=50:
+            return "Average"
+        else:
+            return "Not Topper"
 
 students = []
 while True:
@@ -80,6 +88,8 @@ while True:
                 print("Grade :", student.calculate_grade())
 
                 print("Result :", student.check_result())
+
+                print("Status :", student.is_topper())
 
     elif choice == "3":
 
