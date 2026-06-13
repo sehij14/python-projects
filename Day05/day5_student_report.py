@@ -1,7 +1,7 @@
 # Day5 Project
 #Student Report System using Functions
 
-print("-----STUDENT REPORT SYSTEM-----")
+print("------STUDENT REPORT SYSTEM------")
 
 #Function to calculate grade
 def calculate_grade(marks):
