@@ -1,6 +1,6 @@
-# Day3 Final Project
+# Day3 Project
 #Smart User Decision System
-print("---WELCOME TO SMART SYSTEM---")
+print("----WELCOME TO SMART SYSTEM----")
 
 #Taking user input
 name = input("Enter your name:")
