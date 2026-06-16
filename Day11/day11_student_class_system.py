@@ -1,4 +1,4 @@
-# Day 11 Project
+# Day 11 Final Project
 # Student Class System
 
 class Student:
