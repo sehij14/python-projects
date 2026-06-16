@@ -31,17 +31,28 @@ class Developer(Employee):
 
         print("Language :", self.language)
 
+class Manager(Employee):
+    def __init__(self, name, employee_id, salary, language, department):
+        super().__init__(name, employee_id, salary)
+        self.department = department
+
+    def display_manager(self):
+        self.display_employee()
+        print("Department :", self.department)
+
 developer1 = Developer(
     "Rahul",
     101,
     50000,
     "Python"
+    "Manager1"
 )
 developer2 = Developer(
     "Aman",
     102,
     65000,
     "Java"
+    "Manager2"
 )
 
 developer1.display_developer()
