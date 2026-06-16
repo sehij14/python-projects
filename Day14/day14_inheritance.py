@@ -11,7 +11,7 @@ class Employee:
 
     def display_employee(self):
 
-        print("\n----- EMPLOYEE INFO -----")
+        print("\n------EMPLOYEE INFO------")
         print("Name :", self.name)
         print("ID :", self.employee_id)
         print("Salary :", self.salary)
