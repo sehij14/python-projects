@@ -1,4 +1,4 @@
-# Main Program (Day18)
+# Main Program of Day18
 
 import student_utils
 
