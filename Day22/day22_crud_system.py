@@ -15,8 +15,6 @@ CREATE TABLE IF NOT EXISTS students(
 )
 """)
 
-# CREATE
-
 cursor.execute(
 """
 INSERT INTO students(name, age, marks)
