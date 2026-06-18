@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect("school.db")
+connection = sqlite3.connect("Day22/school_day22.db")
 
 cursor = connection.cursor()
 

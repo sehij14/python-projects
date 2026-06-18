@@ -2,7 +2,7 @@ import sqlite3
 
 # Create Database Connection
 
-connection = sqlite3.connect("school.db")
+connection = sqlite3.connect("Day21/school_day21.db")
 
 cursor = connection.cursor()
 
