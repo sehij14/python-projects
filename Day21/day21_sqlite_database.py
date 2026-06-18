@@ -65,6 +65,4 @@ for student in students:
 
     print("Marks:", student[3])
 
-# Close Connection
-
 connection.close()
