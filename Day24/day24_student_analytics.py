@@ -1,5 +1,3 @@
-import os
-print(os.path.abspath("school.db"))
 import sqlite3
 
 connection = sqlite3.connect("Day24/school_day24.db")
