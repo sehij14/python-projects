@@ -57,8 +57,9 @@ This project helped me to practice how programs analyze data using conditions an
 I also understood how loops can process multiple inputs efficiently instead of writing repetitive code.
 
 How to Run:
-
-python day4_number_analyzer.py
+1. Open the project folder(Python Projects) in VS Code
+2. Open "day4_number_analyzer.py"
+3. Run the program
 
 Learning Progress:
 
