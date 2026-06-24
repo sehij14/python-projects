@@ -21,6 +21,8 @@ Day22/
 ├── day22_crud_system.py      # Main script with all CRUD operations
 └── school_day22.db     # SQLite database (auto-created on first run)
 
+---
+
 ## Main Features
 - Add student records
 - View saved records
@@ -28,6 +30,8 @@ Day22/
 - Delete records
 - Menu-driven database system
 - Persistent data storage using SQLite
+
+---
 
 ## How to run it
 
@@ -48,12 +52,16 @@ No external libraries needed. Just Python.
 You can modify the script to test your own inserts, updates, and deletes — everything is clearly
 labeled with the comments.
 
+---
+
 ## Technology Stack
 - Python
 - SQLite3
 - SQL
 - CRUD Operations
 - VS Code
+
+---
 
 ## What I built
 
@@ -90,6 +98,7 @@ connection.commit
 
 Same story — always filter with WHERE. Deleting without a condition, wipes the entire table.
 
+---
 # What's next
 
 Day 23 goes deeper — search systems, filtering with WHERE clauses, and writing more advanced SQL queries to pull exactly the data you need from the database.
