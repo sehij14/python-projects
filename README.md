@@ -47,7 +47,6 @@ Through this challenge I am mastering the Problem Solving, Data Management and L
 | Day 31 | Training Institute management | OOP Deep Dive Part1- Understanding how classes, objects, attributes actually work |
 
 
-
 I'd been using OOP since Day 11 but I realized I was using it without fully understanding what was happening behind it. From day31 it's about going back and properly understanding the mechanics and how they actually work.
 
 ---
@@ -72,6 +71,7 @@ Each day has its own folder. Inside you'll find the Python files, any database o
 ## Why I'm doing this
 
 I wanted to build real things while learning, not just watch the tutorials. Every project here solves an actual problem, even if it's a small one. By the end of 30 days I went from basic print statements to building a database system with backup, logging, and config management.
+
 
 Still learning. More coming.
 

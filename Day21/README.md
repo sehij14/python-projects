@@ -1,71 +1,59 @@
-# Day 21 - Introduction to SQLite Databases
+# Day 21 — Introduction to  SQLite databases
 
-**Files:** "sqlite database.py" · "school_day21.db"
-
----
-
-## About this project?
-
-This is where I stopped storing data in Python lists and actually started using a real database.
-SQLite is a lightweight database that saves everything into a single `.db` file — and the best part
-is that it comes built into Python, so no installations needed.
-
-I built a simple school student database and learned how the whole connection → query → save cycle works.
+**Files:** `sqlite database.py` · `school_day21.db`
 
 ---
 
-## How to run it: 
+## What I built
 
-Make sure you have Python installed (SQLite comes with it).
+Before today, every time I closed my program all the data was gone. Lists, dictionaries —
+all of it vanished. Today I finally learned how to actually save data using SQLite.
+
+SQLite is a lightweight database that stores everything in a single .db file and the best part is it comes
+built into Python so there's nothing to install. I created a basic school database, set up a students
+table, added some records, and read them back. Small thing, but it felt like a proper step forward.
+
+---
+
+## How to run it:
 
 - Open the Day 21 folder.
 - Run python "day21_sqlite_database.py"
-- When you run it, it will:
-   Create the school_day21.db file automatically (if it doesn't exist)
-- Set up a students table inside it
-- Insert some sample student records
-- Fetch and print them to the terminal
-- If you run it a second time, it won't crash or duplicate the table — I used
+- When you run it, the program will automatically create the school_day21.db file (if it doesn't exist)
+- If you run it for a second time, it won't crash or duplicate the table because I used
 CREATE TABLE IF NOT EXISTS specifically for that.
 
-## What I learned
+That's it. There is no setup needed.
 
-- Connecting to a database
-sqlite3.connect('school_day21.db') opens the database. If the file doesn't exist, SQLite just creates it.
-Simple, but it felt like a big deal the first time I saw a .db file appear out of nowhere.
+---
 
-- The cursor
-You don't run queries directly on the connection — you need a cursor object to do that.
-Think of the connection as the door to the database, and the cursor as the hand that does the actual work inside.
+## What this program does
 
-- Committing changes
-When you insert data, it doesn't actually save until you call conn.commit().
-Skipped this once and spent a good while wondering why my data kept disappearing.
+- It creates the database file and students table on the first run.
+- Then inserts a few sample student records.
+- Then fetches and prints all records to the terminal.
+- Uses `CREATE TABLE IF NOT EXISTS` so when running it multiple times doesn't cause errors.
 
-- Closing the connection
-Always close the database when you're done with it. I put it in a finally block so it closes
-even if something goes wrong mid-way.
+---
 
-## Database Structure
+## What I learned today
 
-Database: school_day21.db
-Table: students
+The flow is to: connect → get a cursor → run your query → commit → close. Every step matters.
 
+I forgot `conn.commit()` early on and couldn't figure out why my data kept disappearing after the program 
+closed. It turns out that writes don't actually save until you explicitly commit them.
+That was a frustrating 20 minutes but I won't forget it now.
 
-| Column | Type    | Notes                        |
-|--------|---------|------------------------------|
-| id     | INTEGER | Auto-increments, primary key |
-| name   | TEXT    | Student's full name          |
-| age    | INTEGER | Student's age                |
-| marks  | INTEGER | e.g. 85, 90, 96              |
+I also learned that `INTEGER PRIMARY KEY` in SQLite automatically becomes an auto-incrementing ID.
+Didn't expect that, but it's really convenient.
 
-## Honest thoughts
-The workflow — connect, create cursor, execute query, commit, close — felt like a lot of steps just
-to store a few names. But once I understood why each step exists, it started making sense.
-This structure is what makes databases reliable, especially when things go wrong mid-operation.
+---
 
 ## What's next
+
 Day 22 will cover full CRUD operations — Create, Read, Update, Delete. Time to actually do things
 with the database instead of just setting it up.
 
-## Day 21 completed!
+---
+
+*Day 21 of Python learning journey completed*
