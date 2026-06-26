@@ -1,43 +1,40 @@
-Day 2 - User Input and Data Types
+# Day 2 — Taking Input from the User 
 
-This is my Day 2 Python practice project.
+**File:** "day2_user_input.py"
 
-In this project, I practiced taking input from users and working with different data types in Python.
+---
 
-File Included:
+## What I built
 
-- "day2_user_input.py"
+A tiny program that asks your name, age, and city — then prints it all back as a formatted info 
+card. First time the program actually talked to the user instead of just printing fixed text.
 
-What I Learned:
+---
 
-- How to take user input using "input()"
-- How to convert input into integers using "int()"
-- Difference between string and integer data types
-- Displaying customized output
+## How to run it
 
-Concepts I Practiced:
+```bash
+python day2_user_input.py
+```
 
-- User Input
-name = input("Enter your name: ")
+It will ask for your name, age, and city one by one. Just type and press enter.
 
-- Integer Conversion
-age = int(input("Enter your age: "))
+---
 
-- Basic Calculations
-simple mathematical operations.
+## What it does
 
-Why This Day Was Important for me:
+- Takes name, age, and city as input.
+- Prints a USER INFORMATION with all three values.
 
-Today I understood that input taken from users is stored as text by default, and type conversion is needed for calculations.
+---
 
-This helped me understand how programs process user data and perform operations based on it.
+## What I learned
 
-Small Programs Practiced:
+Everything from input() comes back as a string. Even if you type a number, Python sees it as text. 
+So for age I had to write " int(input("Enter your age:")) ".
 
-- User introduction program
-- Age input program
-- Number-based programs using user input
+That wrapping — putting int() around input() — is something I think I will use in almost every 
+project now. Took me a minute to understand why it was needed but once it clicked it made total 
+sense.
 
-Status:
-
-Day 2 completed successfully.
+--- 
