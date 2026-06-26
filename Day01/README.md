@@ -1,42 +1,48 @@
-Day 1 - Python Basics and Variables
+# Day 1 — Hello Python 
 
-This is my Day 1 Python practice project from my Python learning journey. 
+**File:** "day1_basic.py"
 
-# In this project, I practiced the basic building blocks of Python programming like:
--printing output
--how Python code runs
--creating variables
--writng beginner friendly Python code
+---
 
-# What I learned:
--How to use print()
--How variales store data
--What are datatypes
--Basic program flow in Python
--Difference between directly writing values and storing them in variables
+## What I wrote
 
-# File Included: 
-- "day1_basic.py"
+Seven lines. That's it. My very first Python script.
 
+name = "Your name"
+age = 18
+college = "Your college"
+print("My name is", name)
+print("I am", age, "years old")
+print("I study in", college)
 
-# Output Display:
+Nothing fancy. Just variables and print statements. But this was the starting point.
 
-Learned how Python shows results on the screen using the "print()" function.
+---
+
+## How to run it
+
+```bash
+python day1_basic.py
+```
+
+---
+
+## What I learned
+
+I learned that you can store a value in a variable just by writing `name = "something"`.
+No need to declare what type it is — Python figures that out.
+
+And print() can take multiple things separated by commas and it puts a space between them
+automatically. Small thing but I didn't know that.
+
+Honestly Day 1 was just about getting comfortable with the fact that Python
+reads your code line by line from top to bottom, and does exactly what you tell it.
+That sounds obvious but it wasn't until I actually ran it.
+
+---
 
 # Why This Day Matters for me:
 
-This was my first step toward learning the Python programming. This day may look simple, but it is actually the base of everything in programming.
-
-
-# What I Realized:
-
-One important thing I understand today is that variables are not just for storing values — they help programs remember and manage information efficiently. Also they make code flexible and easy to understand.
-
-# Future Improvements: 
-
-As I will continue learning, I’ll build larger projects using these same concepts, including:
-
-- automation tools
-- database systems
-- AI-related projects
-- backend applications
+This was my first step toward learning the Python programming. This day may look simple, but it is 
+actually the base of everything in programming.
+---
