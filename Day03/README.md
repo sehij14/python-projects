@@ -1,51 +1,57 @@
-Day 3 - Operators and Simple Calculator
+# Day 3 — Smart User Decision System 
 
-This is my Day 3 Python practice project.
+File name: day3_final_project.py
 
-In this project, I practiced using different operators in Python and created a simple calculator-based program.
+---
 
-File Included:
+## What I built
 
-- "day3_operators.py"
+I built a program that takes your name, age, marks, and a number — then runs four different checks 
+on them and prints all the results at once.
 
-What I Learned:
+This was the first project that felt like it was actually doing something useful.
 
-- Arithmetic operators in Python
-- Taking number input from users
-- Performing calculations using variables
-- Displaying calculation results
-- Understanding how mathematical operations work in programs
+---
 
-Concepts Practiced:
+## How to run it
 
-Arithmetic Operators 
+```bash
+python day3_final_project.py
+```
 
-- Addition "+"
-- Subtraction "-"
-- Multiplication "*"
-- Division "/"
-- Modulus "%"
+Enter your name, age, marks, and any number when asked and press enter.
 
-Example:
+---
 
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
+## What it does
 
-print("Addition:", num1 + num2)
+- Checks voting eligibility based on age (18+)
+- Assigns a grade based on marks — A, B, C, or Fail.
+- Checks if your number is even or odd.
+- Checks if your number is positive, negative, or zero.
+- Prints all results together at the end.
 
-Small Programs Practiced
+---
 
-- Addition program
-- Calculator-style operations
-- Number comparison practice
-- Programs using multiple operators
+## What I learned
 
-Why This Day Was Important:
+elif was the new thing today. I understood if and else but elif lets you check multiple conditions 
+in a clean chain without nesting things inside each other.
+
+I also learned that order matters a lot. In the grade check, if I put `marks >= 50` before    
+`marks >= 75`, Python would match the first one for a student with 80 marks and give them a C 
+instead of a B. The conditions have to go from highest to lowest.
+
+The modulus operator "%" for even/odd was new too. number % 2 == 0 means no remainder when 
+divided by 2, so it's even.
+
+---
+
+## Why This Day Was Important:
 
 Today I learned how programs perform calculations using user input and operators.
 
-This helped me understand how mathematical logic works inside applications and how values can be processed dynamically.
+This helped me understand how mathematical logic works inside applications and how values can be 
+processed dynamically.
 
-Status:
-
-Day 3 completed successfully.
+---
