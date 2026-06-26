@@ -1,28 +1,29 @@
-Day 4 - Number Analyzer System
+# Day 4 — Number Analyzer System 
 
-This is my Day 4 of Python practice project.
+*File Included:* day4_number_analyzer.py
 
-In this project, I created a simple Number Analyzer program that takes multiple numbers from the user and analyzes them using conditions and loops.
+---
 
-About the Project:
+## About the project
 
-The number Analyzer System is a beginner-friendly Python Project that analyzes numbers entered by the user. The program takes multiple inputs and checks different properties of each number, such as even, odd, positive, negative. After analyzing all the numbers, it displays the final count of each category.
+In this project, I created a simple Number Analyzer program that takes multiple numbers from the 
+user and analyzes them using conditions and loops. A program that asks how many numbers you want to 
+analyze, takes  them one by one, and counts how many were even, odd, positive, and negative. Prints 
+a summary at the end.
 
+---
 
-File Included:
+## How to run it:
 
-- "day4_number_analyzer.py"
+```bash
+python day4_number_analyzer.py
+```
 
-What I Learned:
+Enter how many numbers you want to check, then type each one when says to.
 
-- Using "for" loops
-- Using "if-else" conditions
-- Counting values using variables
-- Checking even and odd numbers
-- Checking positive and negative numbers
-- Working with multiple user inputs
+---
 
-Features:
+## Features:
 
 The program can:
 
@@ -31,40 +32,26 @@ The program can:
 - count positive numbers
 - count negative numbers
 
-Example
+---
 
-if number % 2 == 0:
-    even_count += 1
+## What this program does
 
-Sample Output:
+- It asks how many numbers to analyze first.
+- Then loops through each number using for i in range(n)
+- After that tracks four counters — even, odd, positive and negative.
+- Prints a result summary when done.
 
-How many numbers do you want to enter? 5
+---
 
-Enter number: 2
-Enter number: -3
-Enter number: 4
-Enter number: 7
-Enter number: -1
+## What I learned
 
-Even Numbers: 2
-Odd Numbers: 3
-Positive Numbers: 3
-Negative Numbers: 2
+This was my first proper use of a for loop combined with range(). The loop runs exactly as many 
+times as the user specifies which made it feel dynamic for the first time.
 
-Why This Project Was Important: 
+Counters were also new foe me, starting a variable at 0 and adding 1 each time a condition is met
+eg: even_count += 1  
 
-This project helped me to practice how programs analyze data using conditions and counters.
-I also understood how loops can process multiple inputs efficiently instead of writing repetitive code.
+One thing I noticed: a number can be both positive and even at the same time, so both counters 
+update for the same number. The checks are independent ofeach other. 
 
-How to Run:
-1. Open the project folder(Python Projects) in VS Code
-2. Open "day4_number_analyzer.py"
-3. Run the program
-
-Learning Progress:
-
-With each day, I am getting more comfortable with writing logic-based programs and understanding how different programming concepts work together.
-
-Status:
-
-Day 4 completed successfully.
+---
