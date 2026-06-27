@@ -1,45 +1,39 @@
-Day 12 - Student Management System using OOP
+# Day 12 — Student Management using OOP
 
-About the Project:
-
-This project is based on Multiple Objects, Methods, and Real Student Management using Object-Oriented Programming in Python.
-
-In this program, I created a Student Management System that manages multiple student objects and performs operations using class methods.
-
-Compared to the previous OOP project, this system felt more practical because it handled multiple student records instead of working with only a single object. The project was designed to simulate a small real-world student management application.
-
-This project helped me understand how OOP concepts are used to organize and manage larger programs more efficiently.
+File name : day12_student_management_oop.py
 
 ---
 
-Features:
+I rebuilt the student management system from day10 using OOP(Object Oriented 
+Programming). While it looks the same to the user but now each student is a proper 
+object with its own methods.
 
-- Create multiple student objects
-- Store student records
-- Display student information
-- Use methods for different operations
-- Manage records using Object-Oriented Programming
-- Menu-driven interaction
+**How you can run it:**
 
----
-
-Concepts Used:
-
-- classes and objects
-- constructors
-- methods
-- "self"
-- multiple objects
-- lists with objects
-- loops
-- conditional statements
-- menu-driven programming
+```bash
+python day12_student_management_oop.py
+```
 
 ---
 
-File Included:
+The Student class has four methods this time. Not just display — it can do 
+calculate its own grade, check its own result, and even decide if it's a topper.
 
-student_management_system.py
+```
+student.display_info()      → name, age, marks
+student.calculate_grade()   → A / B / C / Fail
+student.check_result()      → Pass / Fail
+student.is_topper()         → Topper / Good Student / Average / Not Topper
+```
+
+---
+
+**The is_topper() method** was my own addition. There are four tiers — Topper at 95+,
+Good Student at 90+, Average at 50+, Not Topper below that. Makes the output
+more interesting than just pass/fail.
+
+I also used **Error handling** that catches ValueError if someone types text for age or 
+marks.
 
 ---
 
@@ -61,52 +55,17 @@ Student Added Successfully
 
 ---
 
-What I Learned
-
-- How multiple objects are managed in Python
-- How methods help organize operations inside classes
-- How OOP can be used to build structured applications
-- How lists and objects can work together in larger systems
-
----
-
-Development Experience
-
-While building this project, managing multiple student objects and accessing their data correctly required careful logic.
-Initially, it was slightly confusing to combine lists with objects, but after practicing object handling and method calls, the overall structure became much clearer.
-
----
-
-Why I Made This Project:
-
-The purpose of this project was to move beyond basic OOP examples and practice creating a more realistic system using classes and objects.
-
-Student management systems are useful practice projects because they involve:
-
-- managing records
-- handling multiple objects
-- organizing program structure
-- and improving logical thinking
-
-This project gave me practical experience in designing structured OOP-based applications.
-
----
-
-How to Run:
-
-1. Open the Day 12 project folder
-2. Open "student_management_system.py"
-3. Run the program
-4. Choose options from the menu
-
----
-
 Project Goal:
 
-The goal of this project was to strengthen my understanding of Object-Oriented Programming by building a structured student management application using multiple objects and methods.
+The goal of this project was to strengthen my understanding of Object-Oriented 
+Programming by building a structured student management application using multiple 
+objects and methods.
 
 ---
 
-Status:
+Comparing this to Day 10 (same program, no OOP) — the OOP version is longer.
+But each part is easier to understand and change on its own. Initially, it was slightly 
+confusing to combine lists with objects, but after practicing object handling and 
+method calls, the overall structure became much clearer.
 
-Day 12 completed successfully.
+---
