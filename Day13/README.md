@@ -1,14 +1,18 @@
-Day 13 - Student Security System
+Day 13 - Student Security System using Encapsulation.
 
 About the Project:
 
-This project is based on Encapsulation and Access Modifiers in Object-Oriented Programming (OOP).
+This project is based on Encapsulation and Access Modifiers in Object-Oriented 
+Programming (OOP).
 
-In this program, I created a Student Security System to understand how data can be protected inside classes using encapsulation.
+In this program, I created a Student Security System to understand how data can be 
+protected inside classes using encapsulation.
 
-The project focuses on restricting direct access to sensitive student information and controlling how data is accessed or modified through methods.
+The project focuses on restricting direct access to sensitive student information and 
+controlling how data is accessed or modified through methods.
 
-Compared to previous OOP projects, this project introduced a more important real-world programming concept — data security and controlled access.
+Compared to previous OOP projects, this project introduced a more important real-world 
+programming concept — data security and controlled access.
 
 ---
 
@@ -22,7 +26,11 @@ Features:
 
 ---
 
-Concepts Used:
+File: day13_encapsulation.py
+
+---
+
+Concepts I Used:
 
 - encapsulation
 - access modifiers
@@ -33,11 +41,13 @@ Concepts Used:
 - methods
 - Object-Oriented Programming
 
----
 
-File Included:
+Marks are stored as self.__marks — double underscore makes it private.
+To read or change them, you have to go through get_marks() and set_marks().
 
-day13_encapsulation.py
+
+At the bottom of the program I tested it by calling "student1.set_marks(-50)".
+It prints "Invalid Marks!" and doesn't update anything.
 
 ---
 
@@ -50,39 +60,20 @@ What I Learned
 
 ---
 
-Development Experience
-
-At first, understanding private variables and why direct access should be restricted felt slightly confusing because earlier projects accessed attributes directly.
-
-While practicing getter and setter methods, I understood how encapsulation improves security and keeps programs more controlled and organized.
-
----
-
 Why I Made This Project
 
-The purpose of this project was to understand how real applications protect important data using Object-Oriented Programming principle -Encapsulation.
+The purpose of this project was to understand how real applications protect important 
+data using Object-Oriented Programming principle -Encapsulation.
 
-Security and controlled access are important in software systems because sensitive information should not always be modified directly.
+Security and controlled access are important in software systems because sensitive 
+information should not always be modified directly.
 
-This project gave me practical understanding of how encapsulation is used in Python applications.
-
----
-
-How to Run
-
-1. Open the Day 13 project folder
-2. Open "student_security_system.py"
-3. Run the program
-4. The program will demonstrate secure access and modification of student data
+This project gave me practical understanding of how encapsulation is used in Python 
+applications.
 
 ---
 
 Project Goal:
 
-The goal of this project was to strengthen my understanding of encapsulation and learn how access control improves data security in Object-Oriented Programming.
-
----
-
-Status:
-
-Day 13 completed successfully.
+The goal of this project was to strengthen my understanding of encapsulation and learn 
+how access control improves data security in Object-Oriented Programming.
