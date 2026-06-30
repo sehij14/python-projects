@@ -20,7 +20,7 @@ Instance method = needs `self`, works with that one object's data (`display_empl
 
 Class method = needs `cls` instead of `self`, it is a method that works with the class itself, instead of object data. That's the `@classmethod` decorator doing its thing on `change_company_name`.
 
-Honestly the class variable part confused me a bit at first because in my head every employee should have "their own" company name, but then I realized — no, that's literally the point. They all work for the same company, so it makes sense that's shared, not individual. Once that clicked it made a lot more sense why you'd even want a class variable in the first place.
+Honestly the class variable part confused me a bit at first because in my head there was every employee should have "their own" company name, but then I realized — no, that's literally the point. They all work for the same company, so it makes sense that's shared, not individual. Once that clicked it made a lot more sense why you'd even want a class variable in the first place.
 
 ## Things I'd add later
 - Saving employees to a file so they don't disappear when the program closes.
