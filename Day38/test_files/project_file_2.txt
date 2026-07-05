@@ -1,0 +1,3 @@
+Python automation notes
+working with filesystem operations 
+using os module for file handling.
