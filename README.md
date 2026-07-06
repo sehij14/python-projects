@@ -1,7 +1,7 @@
 # My Python Learning Journey 
 
 I started learning Python from scratch and challenged myself to build something every single day.
-This repository is that journey — 31 days of projects, starting from printing "Hello World" and ending
+This repository is that journey — 32 days of projects, starting from printing "Hello World" and ending
 with database systems, logging, backups, and config management.
 
 Everything here is self-taught. Some days the code was clean, some days it took me way too long to figure out why something wasn't working — but I showed up every day and that's the point.
@@ -45,6 +45,7 @@ Through this challenge I am mastering the Problem Solving, Data Management and L
 | Day 29 | Logging System | Activity logging and tracking |
 | Day 30 | Config System | Configuration files and settings management |
 | Day 31 | Training Institute management | OOP Deep Dive Part1- Understanding how classes, objects, attributes actually work |
+| Day 32 | Advanced OOP concepts with Workforce Management System | Instance and class variables, methods  |
 
 
 I'd been using OOP since Day 11 but I realized I was using it without fully understanding what was happening behind it. From day31 it's about going back and properly understanding the mechanics and how they actually work.
