@@ -9,7 +9,7 @@ Until now everything I built lived inside Python — lists, dicts, loops, classe
 
 ## What it does
 
-Point it at a folder, view the files inside, then give it a prefix and it renames every file automatically. `Photo One.PNG` becomes `project_file_1.png`, `Resume File.PDF` becomes `project_file_3.pdf`, and so on. extensions are preserved and lowercased, spaces get replaced with underscores.
+Point it at a folder, view the files inside, then give it a prefix and it renames every file automatically. `Photo One.PNG` becomes `project_file_1.png`, `Resume File.PDF` becomes `project_file_3.pdf`, and so on. Extensions are preserved and lowercased, spaces get replaced with underscores.
 
 I tested it on a `test_files/` folder with 4 actual files. It worked exactly as expected you can see the output in the terminal screenshot.
 
