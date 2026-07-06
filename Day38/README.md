@@ -54,4 +54,18 @@ Tested it on a test_files/ folder I created inside Day38/ — had four files wit
 
 ---
 
-*day 38 — wrote the code that actually renamed real files. os module unlocked.*
+**Before Renaming:**
+
+
+![before rename](screenshots/before_rename.png)
+
+
+
+**After Renaming:**
+
+
+![after rename](screenshots/after_rename.png)
+
+---
+
+*day 38* 
