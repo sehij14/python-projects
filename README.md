@@ -46,9 +46,14 @@ Through this challenge I am mastering the Problem Solving, Data Management and L
 | Day 30 | Config System | Configuration files and settings management |
 | Day 31 | Training Institute management | OOP Deep Dive Part1- Understanding how classes, objects, attributes actually work |
 | Day 32 | Advanced OOP concepts with Workforce Management System | Instance and class variables, methods  |
+| Day 33 | Secure Student Recoed Handler | Data Hiding, encapsulation, Getters & Setters |
+| Day 34 | Smart File Organizer | Static methods and Utility System Design |
+| Day 35 | Resume Keyword Scanner | Text Parsing and Keyword Matching |
+| Day 36 | Smart Expense Analytics Tracker | Data Aggregation & Analytics, Structured Data Modelling and Financial Data Processing |
+| Day 37 | Productivity Analytics Engine | Data Analysis and Reporting |
+| Day 38 | Bulk File Renamer Utility | File Handling & Automation |
 
-
-I'd been using OOP since Day 11 but I realized I was using it without fully understanding what was happening behind it. From day31 it's about going back and properly understanding the mechanics and how they actually work.
+I'd been using OOP since Day 11 but I realized I was using it without fully understanding what was happening behind it. From day31 it's about going back and properly understanding the mechanics and how they actually work. And further I'm learning and mastering Python topics and concepts.
 
 ---
 
@@ -78,4 +83,4 @@ Still learning. More coming.
 
 ---
 
-*Started: June 2, 2026 · Language: Python · Status: Ongoing*
+*Started: June 2, 2026 · Language: Python · Status: Ongoing* 
