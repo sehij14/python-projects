@@ -1,4 +1,4 @@
-# Day40 
+# Day40 code
 # Password Strength Analyzer
 
 import re
