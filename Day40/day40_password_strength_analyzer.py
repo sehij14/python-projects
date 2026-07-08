@@ -1,5 +1,5 @@
-# Day40 code using python
-# Password Strength Analyzer
+# Day40 code
+# Password Strength Analyzer with file name 
 
 import re
 
