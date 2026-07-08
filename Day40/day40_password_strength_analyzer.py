@@ -1,5 +1,5 @@
-# Day40 code
-# Password Strength Analyzer with file name 
+# Day40
+# Password Strength Analyzer
 
 import re
 
@@ -16,9 +16,7 @@ while True:
 
     if choice == "1":
 
-        password = input(
-            "\nEnter password to analyze: "
-        )
+        password = input("\nEnter password to analyze: ")
 
         score = 0
 
@@ -92,9 +90,7 @@ while True:
                 print("-", item)
 
         else:
-            print(
-                "\nExcellent password security."
-            )
+            print("\nExcellent password security.")
 
     elif choice == "2":
 
