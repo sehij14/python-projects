@@ -105,4 +105,4 @@ Day41/
 
 ---
 
-*Day 41 of 90 — built something I'd actually use. file persistence, tag search, statistics. starting to feel like real software.* 
+*Day 41  built something I'd actually use.*

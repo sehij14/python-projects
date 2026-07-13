@@ -28,9 +28,7 @@ def create_note():
         print("Title cannot be empty.")
         return
 
-    tags = input(
-        "Enter tags (comma separated): "
-    ).strip()
+    tags = input("Enter tags (comma separated): ").strip()
 
     print(
         "Enter note content "
@@ -367,5 +365,3 @@ def main():
 
 if __name__ == "__main__":
     main() 
-
-# hiiiiiiiiiiii
