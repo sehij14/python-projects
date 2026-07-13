@@ -1,10 +1,9 @@
 # My Python Learning Journey 
 
 I started learning Python from scratch and challenged myself to build something every single day.
-This repository is that journey — 32 days of projects, starting from printing "Hello World" and ending
-with database systems, logging, backups, and config management.
+This repository is that journey starting from printing "Hello World" and ending with database systems, logging, backups, and config management.
 
-Everything here is self-taught. Some days the code was clean, some days it took me way too long to figure out why something wasn't working — but I showed up every day and that's the point.
+Everything here is self-taught. Some days the code was clean, some days it took me way too long to figure out why something wasn't working but I showed up every day and that's the point.
 
 Through this challenge I am mastering the Problem Solving, Data Management and Logical Structuring also.
 
@@ -54,6 +53,7 @@ Through this challenge I am mastering the Problem Solving, Data Management and L
 | Day 38 | Bulk File Renamer Utility | File Handling & Automation |
 | Day 39 | Personal Search Engine | Search Algorithms, Relevance Scoring & Indexing |
 | Day 40 | Password Strength Analyzer | Regex & Validation Systems |
+| Day 41 | Smart Notes CLI | Modern File Handling & Data Persistence using pathlib |
 
 
 ---
@@ -71,13 +71,15 @@ Each day has its own folder. Inside you'll find the Python files, any database o
 - CSV module (built-in)
 - JSON module (built-in)
 - Logging module (built-in)
+- Git
+- GitHub
 - No external libraries used — everything so far is pure Python
 
 ---
 
 ## Why I'm doing this
 
-I wanted to build real things while learning, not just watch the tutorials. Every project here solves an actual problem, even if it's a small one. By the end of 30 days I went from basic print statements to building a database system with backup, logging, and config management.
+I wanted to build real things while learning, not just to  watch the tutorials. Every project here solves an actual problem, even if it's a small one. By the end of 40 days I went from basic print statements to building a database system with backup, logging, and config management, also building real world projects that I'd actually use and that were used in companies.
 
 
 Still learning. More coming. Becoming Master.
