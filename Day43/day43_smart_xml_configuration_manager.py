@@ -110,3 +110,83 @@ def list_settings():
         )
 
     print()
+
+def update_setting():
+    tree = load_tree()
+    root = tree.getroot()
+
+    key = input("Enter setting key to update: ").strip()
+
+    for setting in root.findall("setting"):
+        if setting.get("key") == key:
+            new_value = input("Enter new value: ").strip()
+
+            setting.text = new_value
+
+            save_tree(tree)
+
+            print("Setting updated successfully.\n")
+            return
+
+    print("Setting not found.\n")
+
+
+def delete_setting():
+    tree = load_tree()
+    root = tree.getroot()
+
+    key = input("Enter setting key to delete: ").strip()
+
+    for setting in root.findall("setting"):
+        if setting.get("key") == key:
+            root.remove(setting)
+
+            save_tree(tree)
+
+            print("Setting deleted successfully.\n")
+            return
+
+    print("Setting not found.\n")
+
+
+def search_setting():
+    tree = load_tree()
+    root = tree.getroot()
+
+    key = input("Enter setting key to search: ").strip()
+
+    for setting in root.findall("setting"):
+        if setting.get("key") == key:
+            print("\nSetting Found")
+            print("----------------------")
+            print(f"Key   : {setting.get('key')}")
+            print(f"Value : {setting.text}\n")
+            return
+
+    print("Setting not found.\n")
+
+
+def show_statistics():
+    tree = load_tree()
+    root = tree.getroot()
+
+    settings = root.findall("setting")
+
+    print("\nConfiguration Statistics")
+    print("------------------------------")
+    print(f"Total Settings : {len(settings)}")
+    print()
+
+
+def restore_latest_backup():
+    backups = sorted(BACKUP_FOLDER.glob("*.xml"))
+
+    if not backups:
+        print("No backups found.\n")
+        return
+
+    latest_backup = backups[-1]
+
+    shutil.copy2(latest_backup, XML_FILE)
+
+    print("Latest backup restored successfully.\n")
