@@ -54,6 +54,7 @@ Through this challenge I am mastering the Problem Solving, Data Management and L
 | Day 39 | Personal Search Engine | Search Algorithms, Relevance Scoring & Indexing |
 | Day 40 | Password Strength Analyzer | Regex & Validation Systems |
 | Day 41 | Smart Notes CLI | Modern File Handling & Data Persistence using pathlib |
+| Day 42 | Smart Project Archiever | Zip files and archiving, Compression math & Recursive folder walking |
 
 
 ---
@@ -71,6 +72,7 @@ Each day has its own folder. Inside you'll find the Python files, any database o
 - CSV module (built-in)
 - JSON module (built-in)
 - Logging module (built-in)
+- pathlib 
 - Git
 - GitHub
 - No external libraries used — everything so far is pure Python
