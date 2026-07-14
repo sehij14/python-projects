@@ -190,3 +190,5 @@ def restore_latest_backup():
     shutil.copy2(latest_backup, XML_FILE)
 
     print("Latest backup restored successfully.\n")
+
+    
