@@ -191,4 +191,63 @@ def restore_latest_backup():
 
     print("Latest backup restored successfully.\n")
 
-    
+
+def show_menu():
+    print("===== SMART XML CONFIGURATION MANAGER =====")
+    print("1. List Settings")
+    print("2. Add Setting")
+    print("3. Update Setting")
+    print("4. Delete Setting")
+    print("5. Search Setting")
+    print("6. Configuration Statistics")
+    print("7. Backup Configuration")
+    print("8. Restore Latest Backup")
+    print("9. Exit")
+
+
+def main():
+    create_required_folders()
+    create_xml_file()
+
+    while True:
+        show_menu()
+
+        choice = input("\nEnter your choice: ").strip()
+
+        print()
+
+        if choice == "1":
+            list_settings()
+
+        elif choice == "2":
+            add_setting()
+
+        elif choice == "3":
+            update_setting()
+
+        elif choice == "4":
+            delete_setting()
+
+        elif choice == "5":
+            search_setting()
+
+        elif choice == "6":
+            show_statistics()
+
+        elif choice == "7":
+            backup_xml()
+            print("Backup created successfully.\n")
+
+        elif choice == "8":
+            restore_latest_backup()
+
+        elif choice == "9":
+            print("Thank you for using Smart XML Configuration Manager.")
+            break
+
+        else:
+            print("Invalid choice. Please try again.\n")
+
+
+if __name__ == "__main__":
+    main()
