@@ -85,3 +85,87 @@ def display_posts(posts):
         print(f"Title   : {post['title']}")
         print(f"User ID : {post['userId']}")
         print()
+
+def save_response(posts):
+
+    if not posts:
+        print("No data available to save.\n")
+        return
+
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+    file_path = (
+        RESPONSE_FOLDER /
+        f"response_{timestamp}.json"
+    )
+
+    file_path.write_text(
+        json.dumps(posts, indent=4),
+        encoding="utf-8"
+    )
+
+    log_request(
+        f"Response saved to {file_path.name}"
+    )
+
+    print("Response saved successfully.\n")
+
+
+def search_post(posts):
+
+    if not posts:
+        print("No data available.\n")
+        return
+
+    try:
+        post_id = int(input("Enter Post ID: "))
+    except ValueError:
+        print("Please enter a valid number.\n")
+        return
+
+    for post in posts:
+
+        if post["id"] == post_id:
+
+            print("\nPost Found\n")
+            print(f"ID      : {post['id']}")
+            print(f"User ID : {post['userId']}")
+            print(f"Title   : {post['title']}")
+            print(f"Body    : {post['body']}\n")
+
+            return
+
+    print("Post not found.\n")
+
+
+def show_statistics(posts):
+
+    if not posts:
+        print("No data available.\n")
+        return
+
+    users = {
+        post["userId"]
+        for post in posts
+    }
+
+    print("\nAPI Statistics")
+    print("----------------------------")
+    print(f"Total Posts : {len(posts)}")
+    print(f"Unique Users: {len(users)}")
+    print()
+
+
+def view_request_history():
+
+    print("\nRequest History\n")
+
+    history = LOG_FILE.read_text(
+        encoding="utf-8"
+    )
+
+    if not history.strip():
+        print("No requests logged yet.\n")
+        return
+
+    print(history)
