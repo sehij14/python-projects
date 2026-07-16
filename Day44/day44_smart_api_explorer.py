@@ -169,3 +169,68 @@ def view_request_history():
         return
 
     print(history)
+
+def show_menu():
+
+    print("===== SMART API EXPLORER =====")
+    print("1. Fetch Latest Posts")
+    print("2. Search Post by ID")
+    print("3. Save Response")
+    print("4. View Request History")
+    print("5. API Statistics")
+    print("6. Exit")
+
+
+def main():
+
+    create_required_folders()
+
+    while True:
+
+        show_menu()
+
+        choice = input("\nEnter your choice: ").strip()
+
+        print()
+
+        if choice == "1":
+
+            _, posts = fetch_data()
+
+            display_posts(posts)
+
+        elif choice == "2":
+
+            _, posts = fetch_data()
+
+            search_post(posts)
+
+        elif choice == "3":
+
+            _, posts = fetch_data()
+
+            save_response(posts)
+
+        elif choice == "4":
+
+            view_request_history()
+
+        elif choice == "5":
+
+            _, posts = fetch_data()
+
+            show_statistics(posts)
+
+        elif choice == "6":
+
+            print("Thank you for using Smart API Explorer.")
+            break
+
+        else:
+
+            print("Invalid choice.\n")
+
+
+if __name__ == "__main__":
+    main()
+    
