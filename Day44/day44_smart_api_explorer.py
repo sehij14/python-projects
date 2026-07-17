@@ -184,6 +184,7 @@ def show_menu():
 def main():
 
     create_required_folders()
+    posts = None
 
     while True:
 
@@ -200,14 +201,16 @@ def main():
             display_posts(posts)
 
         elif choice == "2":
+            if posts is None:
 
-            _, posts = fetch_data()
+               _, posts = fetch_data()
 
             search_post(posts)
 
         elif choice == "3":
+            if posts is None:
 
-            _, posts = fetch_data()
+               _, posts = fetch_data()
 
             save_response(posts)
 
@@ -216,8 +219,9 @@ def main():
             view_request_history()
 
         elif choice == "5":
+            if posts is None:
 
-            _, posts = fetch_data()
+               _, posts = fetch_data()
 
             show_statistics(posts)
 
