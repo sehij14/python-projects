@@ -162,3 +162,71 @@ def search_logs():
         print("No matching logs found.")
 
     print()
+
+def show_menu():
+
+    print("===== LOGSTREAM INSPECTOR =====")
+    print("1. View Logs")
+    print("2. Filter INFO Logs")
+    print("3. Filter WARNING Logs")
+    print("4. Filter ERROR Logs")
+    print("5. Search Logs")
+    print("6. View Statistics")
+    print("7. Exit")
+
+
+def main():
+
+    create_required_folders()
+    create_log_file()
+
+    while True:
+
+        show_menu()
+
+        choice = input(
+            "\nEnter your choice: "
+        ).strip()
+
+        print()
+
+        if choice == "1":
+
+            display_logs()
+
+        elif choice == "2":
+
+            save_filtered_logs("INFO")
+
+        elif choice == "3":
+
+            save_filtered_logs("WARNING")
+
+        elif choice == "4":
+
+            save_filtered_logs("ERROR")
+
+        elif choice == "5":
+
+            search_logs()
+
+        elif choice == "6":
+
+            show_statistics()
+
+        elif choice == "7":
+
+            print(
+                "Thank you for using "
+                "LogStream Inspector."
+            )
+            break
+
+        else:
+
+            print("Invalid choice.\n")
+
+
+if __name__ == "__main__":
+
+    main()

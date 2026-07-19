@@ -1,0 +1,8 @@
+INFO User logged in
+INFO Configuration loaded
+WARNING Low disk space
+ERROR Database connection failed
+INFO File uploaded
+WARNING Password expires soon
+ERROR Backup failed
+INFO User logged out

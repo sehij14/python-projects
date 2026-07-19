@@ -1,0 +1,4 @@
+INFO User logged in
+INFO Configuration loaded
+INFO File uploaded
+INFO User logged out
