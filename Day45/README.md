@@ -66,7 +66,7 @@ Most real applications use at least three levels:
 
 Filtering by level is how engineers triage problems. You don't read every log line you filter to `ERROR` first, then `WARNING`, and only look at `INFO` when you need the full picture.
 
-This project does exactly that workflow.
+This project does exactly the above workflow.
 
 ---
 
