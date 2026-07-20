@@ -5,7 +5,7 @@ This repository is that journey starting from printing "Hello World" and ending 
 
 Everything here is self-taught. Some days the code was clean, some days it took me way too long to figure out why something wasn't working but I showed up every day and that's the point.
 
-Through this challenge I am building real problem-solving, data management skills and logical thinking.
+Through this, I am building real problem-solving, data management skills and logical thinking.
 
 ---
 
@@ -56,6 +56,8 @@ Through this challenge I am building real problem-solving, data management skill
 | Day 41 | Smart Notes CLI | Modern File Handling & Data Persistence using pathlib |
 | Day 42 | Smart Project Archiever | Zip files and archiving, Compression math & Recursive folder walking |
 | Day 43 | Smart XML Configuration Manager | XML parsing, config management, backup and restore systems |
+| Day 44 | Smart API Explorer | APIs and HTTP Communication |
+| Day 45 | Log Stream Inspector | Iterators and Generators |
 
 
 ---
@@ -68,7 +70,7 @@ Each day has its own folder. Inside you'll find the Python files, any database o
 
 ## How the learning progressed
 
-Looking back, the 43 days so far split into clear phases naturally:
+Looking back, the 45 days so far split into clear phases naturally:
 
 **Days 01–10 — Python fundamentals**
 Variables, input, loops, functions, error handling. The basics done properly.
@@ -82,8 +84,8 @@ SQLite from scratch — CRUD, queries, filtering, analytics, backup, logging. Sp
 **Days 31–40 — Applied Python**
 OOP deep dive, text processing, regex, analytics systems, file automation. Projects started feeling like tools, not exercises.
 
-**Days 41–43 — File Systems & Data Persistence**
-pathlib, zip archiving, XML config management. Writing code that touches real files and survives a restart.
+**Days 41–45 — Modern Python Development-Filesystems, XML, CLI Tools, APIs and Generators**
+pathlib, zip archiving, XML config management, api, logstram. Writing code that touches real files and survives a restart.
 
 *Still ongoing. Next phase building up.*
 
@@ -109,10 +111,11 @@ pathlib, zip archiving, XML config management. Writing code that touches real fi
 ## Why I'm doing this
 
 I wanted to build real things while learning, not just to  watch the tutorials. Every project 
-here solves an actual problem, even if it's a small one. By day 43 I went from basic print statements to building a database systems that manage XML configs, compress project archives, parse files and persist data across sessions. Everything here solves an actual problem, even if it's a small one.
+here solves an actual problem, even if it's a small one. By day 45 I went from basic print 
+statements to building a database systems that manage XML configs, compress project archives, parse files and persist data across sessions. Everything here solves an actual problem, even if it's a small one.
 
 Still learning. More coming. Becoming Master.
 
 ---
 
-*Started: June 2, 2026 , Language: Python , Status: Ongoing , Day43 of 90* 
+*Started: June 2, 2026 , Language: Python , Status: Ongoing , At Day45* 
