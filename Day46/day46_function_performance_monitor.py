@@ -64,3 +64,66 @@ def performance_monitor(function):
 
     return wrapper
 
+@performance_monitor
+def generate_report():
+
+    print("Generating monthly performance report...")
+
+
+@performance_monitor
+def clean_temp_files():
+
+    print("Cleaning temporary files...")
+
+
+@performance_monitor
+def backup_project():
+
+    print("Creating project backup...")
+
+
+def show_call_statistics():
+
+    if not CALL_COUNTS:
+
+        print("\nNo functions have been executed yet.\n")
+        return
+
+    print("\nFunction Call Statistics")
+    print("------------------------")
+
+    for function_name, count in CALL_COUNTS.items():
+
+        print(f"{function_name:<20} {count}")
+
+    print()
+
+
+def view_log_history():
+
+    if not LOG_FILE.exists():
+
+        print("\nNo log history found.\n")
+        return
+
+    print("\nExecution Log History")
+    print("---------------------")
+
+    with LOG_FILE.open(
+        "r",
+        encoding="utf-8"
+    ) as file:
+
+        content = file.read().strip()
+
+    if content:
+
+        print(content)
+
+    else:
+
+        print("Log file is empty.")
+
+    print()
+
+    
