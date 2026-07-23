@@ -29,7 +29,7 @@ def write_log(message):
 
 def performance_monitor(function):
 
-    def wrapper():
+    def wrapper(*args, **kwargs):
 
         function_name = function.__name__
 
@@ -41,7 +41,7 @@ def performance_monitor(function):
 
         print(f"\nRunning {function_name}...")
 
-        function()
+        function(*args, **kwargs)
 
         end_time = perf_counter()
 
