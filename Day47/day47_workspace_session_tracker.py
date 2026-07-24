@@ -121,3 +121,50 @@ def view_session_history():
         print("History file is empty.")
 
     print()
+
+def show_menu():
+
+    print("===== WORKSPACE SESSION TRACKER =====")
+    print("1. Start Workspace Session")
+    print("2. View Session History")
+    print("3. Exit")
+
+
+def main():
+
+    create_required_folders()
+
+    while True:
+
+        show_menu()
+
+        choice = input(
+            "\nEnter your choice: "
+        ).strip()
+
+        print()
+
+        if choice == "1":
+
+            start_workspace_session()
+
+        elif choice == "2":
+
+            view_session_history()
+
+        elif choice == "3":
+
+            print(
+                "Thank you for using "
+                "Workspace Session Tracker."
+            )
+            break
+
+        else:
+
+            print("Invalid choice.\n")
+
+
+if __name__ == "__main__":
+
+    main()
