@@ -73,3 +73,51 @@ class WorkspaceSession:
         print(
             f"Session '{self.session_name}' ended.\n"
         )
+
+def perform_task():
+
+    print("Working inside the session...")
+    print("Saving project files...")
+    print("Updating activity records...")
+    print("Task completed successfully.\n")
+
+
+def start_workspace_session():
+
+    session_name = input(
+        "Enter session name: "
+    ).strip()
+
+    if not session_name:
+
+        print("Session name cannot be empty.\n")
+        return
+
+    with WorkspaceSession(session_name):
+
+        perform_task()
+
+
+def view_session_history():
+
+    if not LOG_FILE.exists():
+
+        print("\nNo session history found.\n")
+        return
+
+    print("\nWorkspace Session History")
+    print("-------------------------")
+
+    content = LOG_FILE.read_text(
+        encoding="utf-8"
+    ).strip()
+
+    if content:
+
+        print(content)
+
+    else:
+
+        print("History file is empty.")
+
+    print()
