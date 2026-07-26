@@ -38,3 +38,59 @@ def add_task(task: str) -> None:
     task_queue.append(task)
 
     print(f"Task '{task}' added successfully.\n")
+
+
+def process_next_task() -> None:
+
+    if not task_queue:
+
+        print("No pending tasks.\n")
+        return
+
+    task = task_queue.pop(0)
+
+    save_processed_task(task)
+
+    print(f"Processed task: {task}\n")
+
+
+def view_pending_tasks() -> None:
+
+    if not task_queue:
+
+        print("No pending tasks.\n")
+        return
+
+    print("\nPending Tasks")
+    print("-------------")
+
+    for index, task in enumerate(task_queue, start=1):
+
+        print(f"{index}. {task}")
+
+    print()
+
+
+def view_processed_history() -> None:
+
+    if not HISTORY_FILE.exists():
+
+        print("\nNo processed task history found.\n")
+        return
+
+    print("\nProcessed Task History")
+    print("----------------------")
+
+    content = HISTORY_FILE.read_text(
+        encoding="utf-8"
+    ).strip()
+
+    if content:
+
+        print(content)
+
+    else:
+
+        print("History file is empty.")
+
+    print()
