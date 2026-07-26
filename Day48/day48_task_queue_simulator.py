@@ -94,3 +94,64 @@ def view_processed_history() -> None:
         print("History file is empty.")
 
     print()
+
+def show_menu() -> None:
+
+    print("===== TASK QUEUE SIMULATOR =====")
+    print("1. Add Task")
+    print("2. Process Next Task")
+    print("3. View Pending Tasks")
+    print("4. View Processed Task History")
+    print("5. Exit")
+
+
+def main() -> None:
+
+    create_required_folders()
+
+    while True:
+
+        show_menu()
+
+        choice = input(
+            "\nEnter your choice: "
+        ).strip()
+
+        print()
+
+        if choice == "1":
+
+            task = input(
+                "Enter task name: "
+            )
+
+            add_task(task)
+
+        elif choice == "2":
+
+            process_next_task()
+
+        elif choice == "3":
+
+            view_pending_tasks()
+
+        elif choice == "4":
+
+            view_processed_history()
+
+        elif choice == "5":
+
+            print(
+                "Thank you for using "
+                "Task Queue Simulator."
+            )
+            break
+
+        else:
+
+            print("Invalid choice.\n")
+
+
+if __name__ == "__main__":
+
+    main()
