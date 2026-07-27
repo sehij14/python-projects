@@ -58,6 +58,9 @@ Through this, I am building real problem-solving, data management skills and log
 | Day 43 | Smart XML Configuration Manager | XML parsing, config management, backup and restore systems |
 | Day 44 | Smart API Explorer | APIs and HTTP Communication |
 | Day 45 | Log Stream Inspector | Iterators and Generators |
+| Day 46 | Function Performance Monitor | Decorators |
+| Day 47 | Workspace Session Tracker | Context Managers |
+| Day 48 | Task Queue Simulator | Function Annotations and Type Hints |
 
 
 ---
@@ -84,8 +87,8 @@ SQLite from scratch — CRUD, queries, filtering, analytics, backup, logging. Sp
 **Days 31–40 — Applied Python**
 OOP deep dive, text processing, regex, analytics systems, file automation. Projects started feeling like tools, not exercises.
 
-**Days 41–45 — Modern Python Development-Filesystems, XML, CLI Tools, APIs and Generators**
-pathlib, zip archiving, XML config management, api, logstram. Writing code that touches real files and survives a restart.
+**Days 41–48 — Modern Python Development**
+pathlib, zip archiving, XML config management, api, logstream, iterators, generators, decorators. Writing a code that touches real files and survives a restart.
 
 *Still ongoing. Next phase building up.*
 
@@ -118,4 +121,4 @@ Still learning. More coming. Becoming Master.
 
 ---
 
-*Started: June 2, 2026 , Language: Python , Status: Ongoing , At Day45* 
+*Started: June 2, 2026 , Language: Python , Status: Ongoing , At Day48* 
