@@ -150,3 +150,52 @@ def update_workflow_status() -> None:
     )
 
     print("Workflow updated successfully.\n")
+
+def show_menu() -> None:
+
+    print("===== WORKFLOW STATUS MANAGER =====")
+    print("1. Create Workflow")
+    print("2. View Workflows")
+    print("3. Update Workflow Status")
+    print("4. Exit")
+
+
+def main() -> None:
+
+    create_required_folders()
+
+    while True:
+
+        show_menu()
+
+        choice = input(
+            "\nEnter your choice: "
+        ).strip()
+
+        print()
+
+        if choice == "1":
+
+            create_workflow()
+
+        elif choice == "2":
+
+            view_workflows()
+
+        elif choice == "3":
+
+            update_workflow_status()
+
+        elif choice == "4":
+
+            print("Thank you for using "
+                "Workflow Status Manager.")
+            break
+
+        else:
+
+            print("Invalid choice.\n")
+
+if __name__ == "__main__":
+
+    main()
