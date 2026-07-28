@@ -51,3 +51,102 @@ def create_workflow() -> None:
         WorkflowStatus.PENDING)
 
     print("Workflow created successfully.\n")
+
+def read_workflows() -> list[str]:
+
+    if not WORKFLOW_FILE.exists():
+        return []
+
+    return WORKFLOW_FILE.read_text(
+        encoding="utf-8"
+    ).splitlines()
+
+def view_workflows() -> None:
+
+    workflows = read_workflows()
+
+    if not workflows:
+
+        print("No workflows found.\n")
+        return
+
+    print("\nSaved Workflows")
+    print("----------------")
+
+    for index, workflow in enumerate(
+        workflows,
+        start=1
+    ):
+        print(f"{index}. {workflow}")
+
+    print()
+
+
+def update_workflow_status() -> None:
+
+    workflows = read_workflows()
+
+    if not workflows:
+
+        print("No workflows available.\n")
+        return
+
+    view_workflows()
+
+    try:
+
+        choice = int(
+            input(
+                "Select workflow number: "
+            )
+        )
+
+        if choice < 1 or choice > len(workflows):
+
+            print("Invalid workflow number.\n")
+            return
+
+    except ValueError:
+
+        print("Please enter a valid number.\n")
+        return
+
+    print("\nChoose New Status")
+    print("1. Pending")
+    print("2. In Progress")
+    print("3. Completed")
+    print("4. Cancelled")
+
+    status_choice = input(
+        "Enter your choice: "
+    ).strip()
+
+    status_map = {
+        "1": WorkflowStatus.PENDING,
+        "2": WorkflowStatus.IN_PROGRESS,
+        "3": WorkflowStatus.COMPLETED,
+        "4": WorkflowStatus.CANCELLED
+    }
+
+    if status_choice not in status_map:
+
+        print("Invalid status.\n")
+        return
+
+    task_name = workflows[
+        choice - 1
+    ].split(" | ")[0]
+
+    workflows[
+        choice - 1
+    ] = (
+        f"{task_name} | "
+        f"{status_map[status_choice].value}"
+    )
+
+    WORKFLOW_FILE.write_text(
+        "\n".join(workflows) + "\n",
+        encoding="utf-8"
+    )
+
+    print("Workflow updated successfully.\n")
