@@ -33,12 +33,14 @@ Python Functions, enum Class, file Handling, pathlib module, Reading and Writing
 
 ## Project Structure
 
+```
 Day49/
 │
 ├── day49_workflow_status_manager.py
 │
 └── data/
     └── workflows.txt
+```
 
 ---
 
@@ -56,12 +58,14 @@ Day49/
 
 ## Menu options
 
+```
 ====== WORKFLOW STATUS MANAGER ======
 
 1. Create Workflow
 2. View Workflows
 3. Update Workflow Status
 4. Exit
+```
 
 ---
 
@@ -69,7 +73,6 @@ Day49/
 
 ``` 
 ====== WORKFLOW STATUS MANAGER ======
-
 1. Create Workflow
 2. View Workflows
 3. Update Workflow Status
@@ -97,4 +100,6 @@ Workflow updated successfully.
 ```
 --- 
 
-This project focuses on building practical command line applications using clean, modular and maintainable Python code. 
+This project focuses on building practical command line applications using clean, modular and maintainable Python code.  
+
+Day49: Done
