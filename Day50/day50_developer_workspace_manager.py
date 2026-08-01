@@ -292,4 +292,35 @@ def delete_project() -> None:
     print(
         f"\nDeleted: {removed['name']}\n"
     )
-    
+
+
+def project_statistics() -> None:
+
+    projects = load_projects()
+
+    total = len(projects)
+
+    planned = sum(
+        project["status"] == ProjectStatus.PLANNED.value
+        for project in projects)
+
+    progress = sum(
+        project["status"] == ProjectStatus.IN_PROGRESS.value
+        for project in projects)
+
+    testing = sum(
+        project["status"] == ProjectStatus.TESTING.value
+        for project in projects)
+
+    completed = sum(
+        project["status"] == ProjectStatus.COMPLETED.value
+        for project in projects)
+
+    print("\n===== STATISTICS =====\n")
+
+    print(f"Total Projects : {total}")
+    print(f"Planned        : {planned}")
+    print(f"In Progress    : {progress}")
+    print(f"Testing        : {testing}")
+    print(f"Completed      : {completed}")
+    print()
