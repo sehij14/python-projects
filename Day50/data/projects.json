@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Developer workspace manager",
+        "description": "It manages the projects(its name,status,files,statistics) of developer.",
+        "status": "Planned",
+        "priority": "High",
+        "tags": [
+            "Python",
+            "Portfolio",
+            "JSON",
+            "CLI"
+        ],
+        "created": "2026-08-01 22:03",
+        "updated": "2026-08-01 22:03"
+    }
+]
