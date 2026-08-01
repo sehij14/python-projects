@@ -133,3 +133,163 @@ def create_project() -> None:
     save_projects(projects)
 
     print("\nProject created successfully.\n")
+
+def view_projects() -> None:
+
+    projects = load_projects()
+
+    if not projects:
+        print("\nNo projects found.\n")
+        return
+
+    print("\n===== PROJECTS =====\n")
+
+    for index, project in enumerate(projects, start=1):
+
+        print(f"{index}. {project['name']}")
+        print(f"   Description : {project['description']}")
+        print(f"   Status      : {project['status']}")
+        print(f"   Priority    : {project['priority']}")
+        print(f"   Tags        : {', '.join(project['tags'])}")
+        print(f"   Created     : {project['created']}")
+        print(f"   Updated     : {project['updated']}")
+        print()
+
+def search_projects() -> None:
+
+    projects = load_projects()
+
+    if not projects:
+        print("\nNo projects available.\n")
+        return
+
+    keyword = input(
+        "\nEnter project name or tag: "
+    ).strip().lower()
+
+    found = False
+
+    for project in projects:
+
+        if (
+            keyword in project["name"].lower()
+            or any(
+                keyword in tag.lower()
+                for tag in project["tags"]
+            )
+        ):
+
+            print()
+            print(project["name"])
+            print(f"Status   : {project['status']}")
+            print(f"Priority : {project['priority']}")
+            print(f"Tags     : {', '.join(project['tags'])}")
+            print()
+
+            found = True
+
+    if not found:
+        print("\nNo matching project found.\n")
+
+def update_project() -> None:
+
+    projects = load_projects()
+
+    if not projects:
+        print("\nNo projects available.\n")
+        return
+
+    view_projects()
+
+    try:
+
+        choice = int(
+            input(
+                "\nSelect project number: "
+            )
+        )
+
+    except ValueError:
+
+        print("Invalid input.\n")
+        return
+
+    if choice < 1 or choice > len(projects):
+
+        print("Invalid project number.\n")
+        return
+
+    print("\nSelect Status")
+    print("1. Planned")
+    print("2. In Progress")
+    print("3. Testing")
+    print("4. Completed")
+
+    status_choice = input(
+        "Choice: "
+    ).strip()
+
+    status_map = {
+        "1": ProjectStatus.PLANNED,
+        "2": ProjectStatus.IN_PROGRESS,
+        "3": ProjectStatus.TESTING,
+        "4": ProjectStatus.COMPLETED
+    }
+
+    if status_choice not in status_map:
+
+        print("Invalid status.\n")
+        return
+
+    projects[
+        choice - 1
+    ]["status"] = status_map[
+        status_choice
+    ].value
+
+    projects[
+        choice - 1
+    ]["updated"] = get_current_time()
+
+    save_projects(projects)
+
+    print("\nProject updated successfully.\n")
+
+def delete_project() -> None:
+
+    projects = load_projects()
+
+    if not projects:
+        print("\nNo projects available.\n")
+        return
+
+    view_projects()
+
+    try:
+
+        choice = int(
+            input(
+                "\nSelect project number to delete: "
+            )
+        )
+
+    except ValueError:
+
+        print("Invalid input.\n")
+        return
+
+    if choice < 1 or choice > len(projects):
+
+        print("Invalid project number.\n")
+        return
+
+    removed = projects.pop(
+        choice - 1
+    )
+
+    save_projects(projects)
+
+    print(
+        f"\nDeleted: {removed['name']}\n"
+    )
+    
