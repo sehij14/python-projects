@@ -324,3 +324,67 @@ def project_statistics() -> None:
     print(f"Testing        : {testing}")
     print(f"Completed      : {completed}")
     print()
+
+
+def show_menu() -> None:
+
+    print("\n===== DEVELOPER WORKSPACE MANAGER =====")
+    print("1. Create Project")
+    print("2. View Projects")
+    print("3. Search Project")
+    print("4. Update Project")
+    print("5. Delete Project")
+    print("6. Project Statistics")
+    print("7. Exit")
+
+
+def main() -> None:
+
+    create_required_folders()
+
+    while True:
+
+        show_menu()
+
+        choice = input(
+            "\nChoose an option: "
+        ).strip()
+
+        if choice == "1":
+
+            create_project()
+
+        elif choice == "2":
+
+            view_projects()
+
+        elif choice == "3":
+
+            search_projects()
+
+        elif choice == "4":
+
+            update_project()
+
+        elif choice == "5":
+
+            delete_project()
+
+        elif choice == "6":
+
+            project_statistics()
+
+        elif choice == "7":
+
+            print("\nThank you for using Developer Workspace Manager.")
+
+            break
+
+        else:
+
+            print("\nInvalid choice.\n")
+
+
+if __name__ == "__main__":
+
+    main()
