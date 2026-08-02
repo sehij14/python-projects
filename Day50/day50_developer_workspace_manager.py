@@ -80,6 +80,11 @@ def create_project() -> None:
         print("Project name cannot be empty.\n")
         return
 
+    for project in projects:
+        if project["name"].lower() == name.lower():
+            print("A project with this name already exists.\n")
+            return
+
     description = input(
         "Description: "
     ).strip()
@@ -136,7 +141,11 @@ def create_project() -> None:
 
 def view_projects() -> None:
 
-    projects = load_projects()
+    projects = sorted(
+        load_projects(),
+        key=lambda project:
+    project["name"].lower()
+    )
 
     if not projects:
         print("\nNo projects found.\n")
