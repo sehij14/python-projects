@@ -1,11 +1,14 @@
-# My Python Learning Journey 
+# Python Projects - Sehijpreet Kaur
 
 I started learning Python from scratch and challenged myself to build something every single day.
-This repository is that journey starting from printing "Hello World" and ending with database systems, logging, backups, and config management.
+This repository is that journey starting from printing "Hello World" and reaching database systems, 
+file automation, API communication, XML config management, logging and more. 
 
-Everything here is self-taught. Some days the code was clean, some days it took me way too long to figure out why something wasn't working but I showed up every day and that's the point.
+Everything here is self-taught. Some days the code was clean, some days it took me way too long to 
+figure out why something wasn't working but I showed up every day and that's the point.
 
-Through this, I am building real problem-solving, data management skills and logical thinking.
+Through this, I've been building real problem-solving skills, data management skills, practical python 
+experience and logical thinking.
 
 ---
 
@@ -62,53 +65,55 @@ Through this, I am building real problem-solving, data management skills and log
 | Day 47 | Workspace Session Tracker | Context Managers |
 | Day 48 | Task Queue Simulator | Function Annotations and Type Hints |
 | Day 49 | Workflow Status Manager | Python Enums(enum module) |
+| Day 50 | Developer Workspace Manager | Type hints, Enums, JSON Persistence, Integrated Python Application Development |
 
 
 ---
 
 ## How this repo is organized
 
-Each day has its own folder. Inside you'll find the Python files, any database or output files the project creates, and also a README explaining what I built and what I learned that day.
+Each day has its own folder. Inside you'll find the Python files, any database or output files the 
+project creates and also a README explaining what I built and what I learned that day.
 
 ---
 
 ## How the learning progressed
 
-Looking back, the 45 days so far split into clear phases naturally:
+Looking back, the projects split into clear phases:
 
-**Days 01–10 — Python fundamentals**
+**Days 01–10: Python fundamentals**
 Variables, input, loops, functions, error handling. The basics done properly.
 
-**Days 11–20 — OOP + File Handling**
+**Days 11–20: OOP + File Handling**
 Classes, inheritance, CSV, JSON. Started thinking in structures instead of just scripts.
 
-**Days 21–30 — Databases**
+**Days 21–30: Databases**
 SQLite from scratch — CRUD, queries, filtering, analytics, backup, logging. Spent 10 days here intentionally.
 
-**Days 31–40 — Applied Python**
+**Days 31–40: Applied Python**
 OOP deep dive, text processing, regex, analytics systems, file automation. Projects started feeling like tools, not exercises.
 
-**Days 41–49 — Modern Python Development**
-pathlib, zip archiving, XML config management, api, logstream, iterators, generators, decorators, enums. Writing a code that touches real files and survives a restart.
-
-*Still ongoing. Next phase building up.*
+**Days 41–50: Modern Python Development**
+pathlib, zip archiving, XML config management, api, logstream, iterators, generators, decorators, 
+enums. Writing a code that touches real files and survives a restart.
 
 ---
 
 ## Tools and technologies used
 
 - Python
-- SQLite3 (built-in)
-- CSV module (built-in)
-- JSON module (built-in)
-- Logging module (built-in)
+- SQLite3 
+- CSV module 
+- JSON module 
+- Logging module
 - pathlib 
+- zipfile module 
+- xml.etree.ElementTree 
+- datetime 
+- re- Regex 
 - Git
 - GitHub
-- zipfile (built-in)
-- xml.etree.ElementTree (built-in)
-- datetime (built-in)
-- No external libraries used, everything i used so far is pure Python
+- VS Code
 
 ---
 
@@ -116,10 +121,11 @@ pathlib, zip archiving, XML config management, api, logstream, iterators, genera
 
 I wanted to build real things while learning, not just to  watch the tutorials. Every project 
 here solves an actual problem, even if it's a small one. By day 45 I went from basic print 
-statements to building a database systems that manage XML configs, compress project archives, parse files and persist data across sessions. Everything here solves an actual problem, even if it's a small one.
+statements to building a database systems that manage XML configs, compress project archives, parse 
+files and persist data across sessions. Everything here solves an actual problem, even if it's a small 
+one.
 
-Still learning. More coming. Becoming Master.
-
+Still learning. Every project here is a step towards writing quality code not just code that runs.
 ---
 
-*Started: June 2, 2026 , Language: Python , Status: Ongoing* 
+*Started: June 2026 , Language: Python* 
